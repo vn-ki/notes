@@ -1,0 +1,35 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "A note keeing repo",
+  "main": "index.js",
+  "scripts": {
+    "build": "run-s build:*",
+    "build:notes": "ts-node src/build.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:assets": "copyfiles -u 1 \"templates/*.{css,js}\" dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vn-ki/notes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vn-ki/notes/issues"
+  },
+  "homepage": "https://github.com/vn-ki/notes#readme",
+  "dependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/mustache": "^0.8.32",
+    "@types/node": "^10.12.18",
+    "copyfiles": "^2.1.0",
+    "glob": "^7.1.3",
+    "highlightjs": "^9.12.0",
+    "marked": "^0.6.0",
+    "mustache": "^3.0.1",
+    "npm-run-all": "^4.1.5",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  }
+}
